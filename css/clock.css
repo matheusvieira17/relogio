@@ -1,0 +1,85 @@
+
+.clock-container {
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+
+    background-color: var(--light-color);
+    border: 5px solid var(--dark-color);
+    box-shadow: inset 4px 1px 3px 15px var(--color-shadow);
+    margin-top: 5%;
+}
+
+.clock-container .number {
+    
+    --rotation: 0;
+
+    position: absolute; 
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2rem;
+    transform: rotate(var(--rotation));
+    padding: 1rem;
+
+}
+
+.clock-container .number-1 {
+    transform: rotate(30deg)
+}
+
+.clock-container .number-2 {
+    transform: rotate(60deg)
+}
+
+.clock-container .number-3 {
+    transform: rotate(90deg)
+}
+
+.clock-container .number-4 {
+    transform: rotate(120deg)
+}
+
+.clock-container .number-5 {
+    transform: rotate(150deg)
+}
+
+.clock-container .number-6 {
+    transform: rotate(180deg)
+}
+
+.clock-container .number-7 {
+    transform: rotate(210deg)
+}
+
+.clock-container .number-8 {
+    transform: rotate(240deg)
+}
+
+.clock-container .number-9 {
+    transform: rotate(270deg)
+}
+
+.clock-container .number-10 {
+    transform: rotate(300deg)
+}
+
+.clock-container .number-11 {
+    transform: rotate(330deg)
+}
+
+
+.clock-container::after {
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    background-color: var(--dark-color);
+    transform: translate(-50%,-50%);
+}
